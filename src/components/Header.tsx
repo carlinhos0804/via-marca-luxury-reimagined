@@ -11,7 +11,7 @@ const Header = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-primary/30"
     >
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <motion.div
           whileHover={{ scale: 1.02 }}
           className="flex items-center"
@@ -19,7 +19,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Via Marca - Produtos Personalizados"
-            className="h-12 md:h-14 w-auto"
+            className="h-16 md:h-[75px] w-auto"
           />
         </motion.div>
 
