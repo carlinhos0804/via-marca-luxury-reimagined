@@ -19,7 +19,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Via Marca - Produtos Personalizados"
-            className="h-20 md:h-[75px] w-auto"
+            className="h-24 md:h-[75px] w-auto"
           />
         </motion.div>
 
