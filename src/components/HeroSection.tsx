@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+  import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-produtos-coloridos.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5531998971100?text=Olá%2C%20estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos";
