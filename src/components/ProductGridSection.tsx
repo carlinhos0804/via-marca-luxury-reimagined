@@ -1,57 +1,79 @@
 import { motion } from "framer-motion";
-import refPomada from "@/assets/ref-pomada.png";
-import refOleo from "@/assets/ref-oleo.png";
-import refLeavein from "@/assets/ref-leavein.png";
-import refGel from "@/assets/ref-gel.png";
+import imgPomada from "@/assets/pomada.jpg";
+import imgShampooBarba from "@/assets/shampoo-barba.jpg";
+import imgShampooCabelo from "@/assets/shampoo-cabelo.jpg";
+import imgShampooCachos from "@/assets/shampoo-cachos.jpg";
 
 const products = [
-  { src: refPomada, name: "Pomada" },
-  { src: refOleo, name: "Óleo" },
-  { src: refLeavein, name: "Leave-in" },
-  { src: refGel, name: "Gel" },
+  {
+    id: 1,
+    name: "Pomada Modeladora Premium",
+    description: "Fixação forte e brilho natural para penteados impecáveis.",
+    image: imgPomada,
+    category: "Finalização"
+  },
+  {
+    id: 2,
+    name: "Shampoo para Barba",
+    description: "Limpeza profunda e hidratação para fios mais macios.",
+    image: imgShampooBarba,
+    category: "Cuidado com a Barba"
+  },
+  {
+    id: 3,
+    name: "Shampoo Premium Cabelo",
+    description: "Fortalecimento e brilho para todos os tipos de cabelo.",
+    image: imgShampooCabelo,
+    category: "Cuidado Capilar"
+  },
+  {
+    id: 4,
+    name: "Ativador de Cachos",
+    description: "Definição e controle de volume com tecnologia de ponta.",
+    image: imgShampooCachos,
+    category: "Especializados"
+  }
 ];
 
 const ProductGridSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-charcoal">
+    <section id="produtos" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-14"
-        >
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Seu Produto, <span className="text-primary">Sua Marca</span>
+        <div className="text-center mb-16">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Nossa Linha <span className="text-primary">Premium</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            Personalize nossa linha completa de cosméticos com a identidade da sua barbearia
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Produtos desenvolvidos com a mais alta tecnologia para entregar resultados de salão na sua barbearia.
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
+              key={product.id}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="group"
+              viewport={{ once: true }}
+              className="group bg-secondary/30 rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300"
             >
-              <div className="bg-secondary rounded-xl p-6 overflow-hidden border border-primary/10
-                            hover:border-primary/40 transition-all duration-300">
-                <div className="aspect-square overflow-hidden rounded-lg mb-4">
-                  <img
-                    src={product.src}
-                    alt={`${product.name} personalizado`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <p className="text-center text-primary font-display text-lg md:text-xl font-semibold tracking-wider">
-                  SUA MARCA AQUI
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-primary text-xs uppercase tracking-widest font-bold">
+                  {product.category}
+                </span>
+                <h3 className="text-xl font-bold text-foreground mt-2 mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {product.description}
                 </p>
               </div>
             </motion.div>
