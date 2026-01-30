@@ -23,14 +23,14 @@ const products = [
     id: 3,
    name: "Shampoo Premium Cabelo",
     description: "Fortalecimento e brilho para todos os tipos de cabelo.",
-    image: imgShampooCachos, // Aqui a foto de cachos agora recebe a legenda de cabelo
+    image: imgShampooCabelo, // Aqui a foto de cachos agora recebe a legenda de cabelo
     category: "Cuidado Capilar"
   },
   {
     id: 4,
      name: "Ativador de Cachos",
     description: "Definição e controle de volume com tecnologia de ponta.",
-    image: imgShampooCabelo, // Aqui a foto do cabelo agora recebe a legenda de cachos
+    image: imgShampooCachos, // Aqui a foto do cabelo agora recebe a legenda de cachos
     category: "Especializados"
   }
 ];
