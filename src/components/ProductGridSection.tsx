@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import imgPomada from "@/assets/pomada.jpg";
-import imgShampooBarba from "@/assets/shampoo-barba.jpg";
-import imgShampooCabelo from "@/assets/shampoo-cabelo.jpg";
-import imgShampooCachos from "@/assets/shampoo-cachos.jpg";
+import imgPomada from "../assets/pomada.jpg";
+import imgShampooBarba from "../assets/shampoo-barba.jpg";
+import imgShampooCabelo from "../assets/shampoo-cabelo.jpg";
+import imgShampooCachos from "../assets/shampoo-cachos.jpg";
 
 const products = [
   {
@@ -21,20 +21,19 @@ const products = [
   },
   {
     id: 3,
-    name: "Shampoo Premium Cabelo",
-    description: "Fortalecimento e brilho para todos os tipos de cabelo.",
-    image: imgShampooCabelo,
-    category: "Cuidado Capilar"
+    name: "Ativador de Cachos",
+    description: "Definição e controle de volume com tecnologia de ponta.",
+    image: imgShampooCabelo, // Aqui a foto do cabelo agora recebe a legenda de cachos
+    category: "Especializados"
   },
   {
     id: 4,
-    name: "Ativador de Cachos",
-    description: "Definição e controle de volume com tecnologia de ponta.",
-    image: imgShampooCachos,
-    category: "Especializados"
+    name: "Shampoo Premium Cabelo",
+    description: "Fortalecimento e brilho para todos os tipos de cabelo.",
+    image: imgShampooCachos, // Aqui a foto de cachos agora recebe a legenda de cabelo
+    category: "Cuidado Capilar"
   }
 ];
-
 const ProductGridSection = () => {
   return (
     <section id="produtos" className="py-24 bg-background">
