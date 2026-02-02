@@ -39,7 +39,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-6 leading-tight"
           >
-            Crie sua linha de produtos com a{" "}
+            Tenha sua linha de produtos com a{" "}
             <span className="text-primary">sua marca</span> para sua{" "}
             <span className="text-primary">Barber Shop</span>
           </motion.h1>
@@ -50,7 +50,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto font-body"
           >
-            Crie sua própria linha de cosméticos premium e destaque-se no mercado
+            Tenha sua própria linha de cosméticos premium e destaque-se no mercado
           </motion.p>
 
           <motion.a
