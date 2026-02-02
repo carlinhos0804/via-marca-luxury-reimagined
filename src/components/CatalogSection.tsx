@@ -44,9 +44,9 @@ const CatalogSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Nosso <span className="text-primary">Catálogo</span> de Produtos
-          </h2>
+         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
+  LINHA DE <span className="text-primary">PRODUTOS</span>
+</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
             Uma linha completa de cosméticos premium para sua barbearia
           </p>
