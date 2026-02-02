@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const advantages = [
   { 
-    text: "Crie a sua própria linha", 
+    text: "Tenha a sua própria linha", 
     bgClass: "bg-block-teal",
     textClass: "text-white",
     size: "col-span-2 md:col-span-1"
