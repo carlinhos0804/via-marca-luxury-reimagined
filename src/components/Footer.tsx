@@ -34,7 +34,7 @@ const Footer = () => {
               className="flex items-center gap-2 hover:text-primary transition-colors duration-300"
             >
               <Instagram size={20} />
-              <span className="font-body">@via.marca</span>
+              <span className="font-body">@viamarca</span>
             </a>
 
             <div className="flex items-center gap-2">
